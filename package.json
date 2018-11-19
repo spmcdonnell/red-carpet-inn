@@ -1,0 +1,24 @@
+{
+  "name": "red-carpet-inn",
+  "version": "1.0.0",
+  "description": "Red Carpet Inn Galloway, NJ Official Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hotel",
+    "motel",
+    "hospitality",
+    "b&b",
+    "rest",
+    "stop"
+  ],
+  "author": "Sean McDonnell",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
