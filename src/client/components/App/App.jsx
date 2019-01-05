@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
+
+import Preheader from '../Preheader';
 import Header from '../Header';
+import Footer from '../Footer';
+
+import normalize from './Normalize.css';
 import style from './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app-wrap">
         <Header />
-        <h1>Testing App component</h1>
+        <main className="main-container">
+          <h1>Main content area</h1>
+        </main>
+        <Footer />
       </div>
     );
   }

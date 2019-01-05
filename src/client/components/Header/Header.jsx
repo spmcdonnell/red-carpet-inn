@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
+import Preheader from '../Preheader';
+import MainNav from '../MainNav';
 import style from './Header.css';
 
 class Header extends Component {
   render() {
     return (
-      <div>
-        <ul>
-          <li>Menu Item 1</li>
-          <li>Menu Item 2</li>
-          <li>Menu Item 3</li>
-        </ul>
-      </div>
+      <header className={style.site_header}>
+        <Preheader />
+        <MainNav />
+      </header>
     );
   }
 }
