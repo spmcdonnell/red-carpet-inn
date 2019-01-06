@@ -12,7 +12,7 @@ const moduleObj = {
       loader: 'babel-loader'
     },
     {
-      test: /\.css/,
+      test: /\.s?css/,
       use: [
         { loader: 'style-loader' },
         {
@@ -22,7 +22,8 @@ const moduleObj = {
             modules: true,
             localIdentName: '[path]___[name]__[local]___[hash:base64:5]'
           }
-        }
+        },
+        { loader: 'sass-loader' }
       ]
     }
   ]
