@@ -853,3 +853,20 @@ template {
     }
   }
 }
+
+/* ------------------------------------------------------------
+CUSTOM STYLES
+-------------------------------------------------------------*/
+
+:global {
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* -------- MENUS -------- */
+  ul.menu li {
+    display: inline-block;
+    list-style-type: none;
+  }
+}

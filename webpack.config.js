@@ -12,7 +12,7 @@ const moduleObj = {
       loader: 'babel-loader'
     },
     {
-      test: /\.s?css/,
+      test: /\.s?css$/,
       use: [
         { loader: 'style-loader' },
         {
@@ -20,10 +20,21 @@ const moduleObj = {
           options: {
             sourceMap: true,
             modules: true,
-            localIdentName: '[path]___[name]__[local]___[hash:base64:5]'
+            localIdentName: '[local]-[hash:base64:5]'
           }
         },
         { loader: 'sass-loader' }
+      ]
+    },
+    {
+      test: /\.(png|jpe?g|gif)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: 'assets/images/[name].[hash].[ext]'
+          }
+        }
       ]
     }
   ]
@@ -40,17 +51,20 @@ const client = {
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist/public'),
-    publicPath: '/dist/public',
+    publicPath: '/dist/public/',
     filename: 'client.js'
   },
   devtool: 'cheap-eval-source-map',
   devServer: {
     hot: true,
-    contentBase: 'dist/public',
-    publicPath: '/dist/public'
+    contentBase: './dist/public',
+    publicPath: '/dist/public/'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json']
+    extensions: ['.js', '.jsx', '.json'],
+    alias: {
+      images: path.resolve(__dirname, 'src/client/assets/images/')
+    }
   },
   module: moduleObj,
   plugins: [

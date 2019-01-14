@@ -1,4 +1,10 @@
+$red: #ee1525;
+
 .preheader {
-  background-color: #ed1c2e;
-  color: #fff;
+  background-color: $red;
+  color: #333;
+}
+
+.cell:nth-of-type(2) {
+  text-align: right;
 }

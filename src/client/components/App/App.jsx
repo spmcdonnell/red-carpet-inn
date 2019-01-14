@@ -13,7 +13,9 @@ class App extends Component {
       <div className="app-wrap">
         <Header />
         <main className="main-container">
-          <h1>Main content area</h1>
+          <div className="wrap">
+            <h1>Main content area</h1>
+          </div>
         </main>
         <Footer />
       </div>

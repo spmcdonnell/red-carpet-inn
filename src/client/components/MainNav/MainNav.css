@@ -1,3 +1,7 @@
-.main_nav {
-  background-color: purple;
+.main-nav {
+  background-color: beige;
+}
+
+.primary-nav {
+  display: inline-block;
 }

@@ -5,7 +5,9 @@ class Footer extends Component {
   render() {
     return (
       <footer className={style['site-footer']}>
-        <p>FOOTER</p>
+        <div className="wrap">
+          <p>FOOTER</p>
+        </div>
       </footer>
     );
   }
