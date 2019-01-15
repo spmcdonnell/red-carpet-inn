@@ -27,12 +27,24 @@ const moduleObj = {
       ]
     },
     {
-      test: /\.(png|jpe?g|gif)$/,
+      test: /\.(png|jpg|gif)$/,
       use: [
         {
           loader: 'file-loader',
           options: {
             name: 'assets/images/[name].[hash].[ext]'
+          }
+        }
+      ]
+    },
+    {
+      test: /favicon\.ico$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            limit: 1,
+            name: '[name].[ext]'
           }
         }
       ]
@@ -58,7 +70,8 @@ const client = {
   devServer: {
     hot: true,
     contentBase: './dist/public',
-    publicPath: '/dist/public/'
+    publicPath: '/dist/public/',
+    historyApiFallback: true
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
