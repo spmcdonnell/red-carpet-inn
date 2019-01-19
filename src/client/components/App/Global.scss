@@ -859,13 +859,17 @@ CUSTOM STYLES
 -------------------------------------------------------------*/
 
 :global {
+  a {
+    text-decoration: none;
+  }
+
   .wrap {
     max-width: 1200px;
     margin: 0 auto;
   }
 
   /* -------- MENUS -------- */
-  ul.menu li {
+  .menu li {
     display: inline-block;
     list-style-type: none;
   }

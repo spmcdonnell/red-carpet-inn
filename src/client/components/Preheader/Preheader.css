@@ -1,8 +1,36 @@
+/* Vars */
 $red: #ee1525;
 
+/* Styles */
 .preheader {
   background-color: $red;
-  color: #333;
+  color: #fff;
+  padding: 7px 0;
+}
+
+.preheader p {
+  margin-bottom: 0;
+}
+
+.preheader a {
+  color: #fff;
+}
+
+.menu {
+  margin: 0;
+}
+
+ul.menu li {
+  padding: 0 2%;
+}
+
+ul.menu li:last-child {
+  padding-right: 0;
+}
+
+ul.menu li img {
+  vertical-align: -4px;
+  margin-right: 3px;
 }
 
 .cell:nth-of-type(2) {

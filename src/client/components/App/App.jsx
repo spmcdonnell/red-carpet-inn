@@ -29,17 +29,15 @@ class App extends Component {
       <BrowserRouter>
         <div className="app-wrap">
           <Header />
-          <main className="main-container">
-            <div className="wrap">
-              <Switch>
-                <Route path="/" component={Home} exact />
-                <Route path="/about" component={About} />
-                <Route path="/rooms" component={Rooms} />
-                <Route path="/attractions" component={Attractions} />
-                <Route path="/contact" component={Contact} />
-                <Route component={FourOhFour} />
-              </Switch>
-            </div>
+          <main className={style['main-container']}>
+            <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/about" component={About} />
+              <Route path="/rooms" component={Rooms} />
+              <Route path="/attractions" component={Attractions} />
+              <Route path="/contact" component={Contact} />
+              <Route component={FourOhFour} />
+            </Switch>
           </main>
           <Footer />
         </div>

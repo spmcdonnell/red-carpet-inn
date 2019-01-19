@@ -1,0 +1,19 @@
+.slider {
+  position: relative;
+  height: calc(100vh - 131px);
+}
+
+.slider-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.slider-navigation.prev {
+  left: 3%;
+}
+
+.slider-navigation.next {
+  right: 3%;
+}

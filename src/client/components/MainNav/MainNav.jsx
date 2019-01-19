@@ -12,7 +12,7 @@ class MainNav extends Component {
       <div className={[style['main-nav']].join(' ')}>
         <div className="wrap">
           <div className="grid-x grid-margin-x">
-            <div className="logo-container">
+            <div className="logo-container cell small-12 medium-2">
               <Link to="/">
                 <img
                   className="site-logo"
@@ -23,8 +23,11 @@ class MainNav extends Component {
                 />
               </Link>
             </div>
-            <nav className="primary-nav">
-              <ul className="menu">
+            <nav className="primary-nav cell small-12 medium-10">
+              <ul className={[style.menu, 'menu'].join(' ')}>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
                 <li>
                   <Link to="/about">About</Link>
                 </li>
