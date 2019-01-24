@@ -24,6 +24,8 @@ import favicon from 'images/favicon.ico';
 const FourOhFour = () => <h1>404</h1>;
 
 class App extends Component {
+  componentDidMount() {}
+
   render() {
     return (
       <BrowserRouter>
