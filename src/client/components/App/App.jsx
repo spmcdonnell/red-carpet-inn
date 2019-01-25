@@ -24,12 +24,20 @@ import favicon from 'images/favicon.ico';
 const FourOhFour = () => <h1>404</h1>;
 
 class App extends Component {
-  componentDidMount() {}
+  state = {
+    mounted: null
+  };
+  componentDidMount() {
+    this.setState({ mounted: 'component-mounted' });
+  }
 
   render() {
     return (
       <BrowserRouter>
-        <div className="app-wrap">
+        <div
+          className={[style['app-wrap'], style[this.state.mounted]].join(' ')}
+          style={{ opacity: 0 }}
+        >
           <Header />
           <main className={style['main-container']}>
             <Switch>

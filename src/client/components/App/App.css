@@ -1,3 +1,12 @@
+.app-wrap {
+  text-align: center;
+  transition: opacity 1s ease-out;
+}
+
+.component-mounted {
+  opacity: 1 !important;
+}
+
 .main-container {
   z-index: 1;
 }

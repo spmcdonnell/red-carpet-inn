@@ -859,8 +859,13 @@ CUSTOM STYLES
 -------------------------------------------------------------*/
 
 :global {
+  /* -------- GENERAL -------- */
   a {
     text-decoration: none;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 
   .wrap {
@@ -872,5 +877,10 @@ CUSTOM STYLES
   .menu li {
     display: inline-block;
     list-style-type: none;
+  }
+
+  /* -------- CONTENT BLOCKS/SECTIONS -------- */
+  section:not(.hero) {
+    padding: 60px 0;
   }
 }
