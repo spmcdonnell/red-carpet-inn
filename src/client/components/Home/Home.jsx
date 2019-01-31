@@ -58,7 +58,25 @@ class Home extends Component {
         <section>
           <div className="wrap">
             <h2>Testimonials</h2>
-            <p>**TESTIMONIALS COMPONENT HERE**</p>
+          </div>
+        </section>
+        <section className={style.callout}>
+          <div className="wrap">
+            <h2>Tentative Callout Section</h2>
+          </div>
+        </section>
+        <section className={[style['contact-info'], 'no-padding'].join(' ')}>
+          <div className={[style['grid-x'], 'grid-x'].join(' ')}>
+            <div
+              className={[style.cell, 'cell', 'small-12', 'medium-6'].join(' ')}
+            >
+              <h2>Google Map</h2>
+            </div>
+            <div
+              className={[style.cell, 'cell', 'small-12', 'medium-6'].join(' ')}
+            >
+              <h2>Contact Info and Form</h2>
+            </div>
           </div>
         </section>
       </div>

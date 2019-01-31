@@ -7,3 +7,20 @@
   background-color: #fff0d4;
   text-align: center;
 }
+
+.callout {
+  background-color: #00a8bb;
+}
+
+.contact-info,
+.contact-info .grid-x,
+.contact-info .grid-x .cell {
+  min-height: 400px;
+}
+.contact-info .grid-x .cell:first-child {
+  background-color: #abfff0;
+}
+
+.contact-info .grid-x .cell:last-child {
+  background-color: #f9bddb;
+}

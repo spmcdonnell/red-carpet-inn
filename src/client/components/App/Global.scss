@@ -860,6 +860,10 @@ CUSTOM STYLES
 
 :global {
   /* -------- GENERAL -------- */
+  body {
+    overflow-x: hidden;
+  }
+
   a {
     text-decoration: none;
   }
@@ -882,5 +886,9 @@ CUSTOM STYLES
   /* -------- CONTENT BLOCKS/SECTIONS -------- */
   section:not(.hero) {
     padding: 60px 0;
+  }
+
+  section.no-padding {
+    padding: 0;
   }
 }

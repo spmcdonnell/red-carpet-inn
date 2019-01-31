@@ -40,6 +40,9 @@ class MainNav extends Component {
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>
+                <li>
+                  <Link to="/">Book Now!</Link>
+                </li>
               </ul>
             </nav>
           </div>
