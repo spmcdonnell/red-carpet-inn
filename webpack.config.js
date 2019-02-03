@@ -35,6 +35,18 @@ const moduleObj = {
           options: {
             name: 'assets/images/[name].[hash].[ext]'
           }
+        },
+        {
+          loader: 'image-webpack-loader',
+          options: {
+            mozjpeg: {
+              progressive: true,
+              quality: 48
+            },
+            optipng: {
+              enabled: false
+            }
+          }
         }
       ]
     },
