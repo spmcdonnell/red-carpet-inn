@@ -34,6 +34,8 @@ class Preheader extends Component {
 
     let weatherData = load_weather_data();
 
+    console.log(weatherData);
+
     Promise.all([weatherData]).then(values => {
       let weatherObj = values[0];
       let description = weatherObj.weather[0].description.toLowerCase();
@@ -42,9 +44,12 @@ class Preheader extends Component {
 
       if (description === 'clear sky') {
         weatherIcon = clearDay;
-      } else if (description.indexOf('cloud') !== -1) {
+      } else if (
+        description.indexOf('cloud') !== -1 ||
+        description === 'mist'
+      ) {
         weatherIcon = cloudyDay;
-      } else if (description.indexOf('rain') !== -1 || description === 'mist') {
+      } else if (description.indexOf('rain') !== -1) {
         weatherIcon = rainyDay;
       } else if (description === 'thunderstorm') {
         weatherIcon = stormyDay;
@@ -59,16 +64,20 @@ class Preheader extends Component {
     });
   }
 
+  kelvinToFahrenheit = kelvinTemp => {
+    return Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
+  };
+
   render() {
     let temp;
 
     if (this.state.weatherData) {
-      temp = Math.round(
-        (this.state.weatherData.main.temp - 273.15) * (9 / 5) + 32
-      );
+      temp = this.kelvinToFahrenheit(this.state.weatherData.main.temp);
     } else {
       temp = 'Loading temperature';
     }
+
+    console.log(this.state.weatherData);
 
     return (
       <div className={[style.preheader].join(' ')}>

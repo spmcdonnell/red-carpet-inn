@@ -7,11 +7,11 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 // Routes
-import Home from '../Home';
-import About from '../About';
-import Rooms from '../Rooms';
-import Attractions from '../Attractions';
-import Contact from '../Contact';
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Rooms from '../pages/Rooms';
+import Attractions from '../pages/Attractions';
+import Contact from '../pages/Contact';
 
 // Styles
 import normalize from './Global.scss';

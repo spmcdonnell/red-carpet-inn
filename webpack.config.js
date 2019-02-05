@@ -41,7 +41,7 @@ const moduleObj = {
           options: {
             mozjpeg: {
               progressive: true,
-              quality: 48
+              quality: 100
             },
             optipng: {
               enabled: false
@@ -89,7 +89,9 @@ const client = {
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
-      images: path.resolve(__dirname, 'src/client/assets/images/')
+      images: path.resolve(__dirname, 'src/client/assets/images/'),
+      helpers: path.resolve(__dirname, 'src/client/helpers/'),
+      components: path.resolve(__dirname, 'src/client/components/')
     }
   },
   module: moduleObj,

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Slider from '../Slider';
+import Slider from 'components/Slider';
 
 // Styles
 import style from './Home.css';
 
 // Slider Data
-import slides from '../../helpers/sliders/homeSlider';
+import slides from 'helpers/sliders/homeSlider';
 
 class Home extends Component {
   render() {
