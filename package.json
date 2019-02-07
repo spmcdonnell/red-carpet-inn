@@ -55,6 +55,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
+    "eslint": "^5.13.0",
     "express": "^4.16.4",
     "raf": "^3.4.1",
     "react": "^16.6.3",

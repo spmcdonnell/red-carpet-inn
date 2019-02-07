@@ -77,8 +77,6 @@ class Preheader extends Component {
       temp = 'Loading temperature';
     }
 
-    console.log(this.state.weatherData);
-
     return (
       <div className={[style.preheader].join(' ')}>
         <div className="wrap">
