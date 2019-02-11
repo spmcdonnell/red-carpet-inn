@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'components/Slider';
+import LocationMap from '../../LocationMap';
 
 // Styles
 import style from './Home.css';
@@ -70,7 +71,7 @@ class Home extends Component {
             <div
               className={[style.cell, 'cell', 'small-12', 'medium-6'].join(' ')}
             >
-              <h2>Google Map</h2>
+              <LocationMap />
             </div>
             <div
               className={[style.cell, 'cell', 'small-12', 'medium-6'].join(' ')}
