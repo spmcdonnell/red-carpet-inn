@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Slider from 'components/Slider';
-import LocationMap from '../../LocationMap';
+import LocationMap from 'components/LocationMap';
+import ContactForm from 'components/ContactForm';
+
+// Assets
+import envelope from 'images/white-email-icon.png';
+import phone from 'images/white-phone-icon.png';
 
 // Styles
 import style from './Home.css';
@@ -76,7 +81,42 @@ class Home extends Component {
             <div
               className={[style.cell, 'cell', 'small-12', 'medium-6'].join(' ')}
             >
-              <h2>Contact Info and Form</h2>
+              <h2>Get In Touch!</h2>
+              <h3>For Booking and Availability</h3>
+              <ul>
+                <li>
+                  <address>
+                    <p>
+                      206 E White Horse Pike
+                      <br />
+                      Galloway, NJ 08205
+                    </p>
+                  </address>
+                </li>
+                <li>
+                  <a href="mailto:info@redcarpetinnnj.com">
+                    <img
+                      src={envelope}
+                      width="24"
+                      height="18"
+                      alt="Mail Envelope Icon"
+                    />
+                    : info@redcarpetinnnj.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:6096523322">
+                    <img
+                      src={phone}
+                      width="17"
+                      height="18"
+                      alt="Telephone Icon"
+                    />
+                    : 609-652-3322
+                  </a>
+                </li>
+              </ul>
+              <ContactForm />
             </div>
           </div>
         </section>
