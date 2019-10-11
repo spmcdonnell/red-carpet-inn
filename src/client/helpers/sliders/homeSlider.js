@@ -23,6 +23,13 @@ const homeSliderData = [
     subtitle: 'View exciting local attractions!',
     buttonText: 'Find Your Excitement!',
     buttonLink: '/attractions'
+  },
+  {
+    image: sliderOneImage,
+    heading: 'Experience Atlantic City Without The Atlantic City Price',
+    subtitle: 'View exciting local attractions!',
+    buttonText: 'Find Your Excitement!',
+    buttonLink: '/attractions'
   }
 ];
 
