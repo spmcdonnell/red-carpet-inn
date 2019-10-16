@@ -76,7 +76,7 @@ class Home extends Component {
             <div
               className={[style.cell, 'cell', 'small-12', 'medium-6'].join(' ')}
             >
-              <LocationMap />
+              {/* <LocationMap /> */}
             </div>
             <div
               className={[style.cell, 'cell', 'small-12', 'medium-6'].join(' ')}
