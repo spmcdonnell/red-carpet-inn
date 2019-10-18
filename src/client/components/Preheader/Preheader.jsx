@@ -9,11 +9,6 @@ import cloudyDay from 'images/cloudy-day.png';
 import rainyDay from 'images/rainy-day.png';
 import stormyDay from 'images/stormy-day.png';
 
-import clearNight from 'images/clear-night.png';
-import cloudyNight from 'images/cloudy-night.png';
-import rainyNight from 'images/rainy-night.png';
-import stormyNight from 'images/stormy-night.png';
-
 import snowflake from 'images/snowflake.png';
 
 // Styles
