@@ -1,5 +1,7 @@
 const express = require('express');
 
+const PORT = process.env.PORT || 5000;
+
 export default class WebServer {
   constructor() {
     this.app = express();
@@ -8,7 +10,8 @@ export default class WebServer {
   start() {
     return new Promise((resolve, reject) => {
       try {
-        this.server = this.app.listen(3000, function() {
+        this.server = this.app.listen(PORT, function() {
+          console.log(`Running on port ${PORT}...`);
           resolve();
         });
       } catch (e) {
