@@ -7,6 +7,7 @@ export default class WebServer {
     this.app = express();
     this.app.use(express.static('dist/public'));
   }
+
   start() {
     return new Promise((resolve, reject) => {
       try {
@@ -20,6 +21,7 @@ export default class WebServer {
       }
     });
   }
+
   stop() {
     return new Promise((resolve, reject) => {
       try {
