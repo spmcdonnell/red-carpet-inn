@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react';
 
 class LocationMap extends Component {
   static defaultProps = {
-    center: { lat: 39.449775, lng: -74.534485 },
+    center: { lat: 38.449775, lng: -74.534485 },
     zoom: 16
   };
 
