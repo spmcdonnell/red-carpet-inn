@@ -12,6 +12,7 @@ import About from '../pages/About';
 import Rooms from '../pages/Rooms';
 import Attractions from '../pages/Attractions';
 import Contact from '../pages/Contact';
+import Events from '../pages/Events';
 
 // Styles
 import normalize from './Global.scss';
@@ -46,6 +47,7 @@ class App extends Component {
               <Route path="/rooms" component={Rooms} />
               <Route path="/attractions" component={Attractions} />
               <Route path="/contact" component={Contact} />
+              <Route path="/events" component={Events} />
               <Route component={FourOhFour} />
             </Switch>
           </main>
