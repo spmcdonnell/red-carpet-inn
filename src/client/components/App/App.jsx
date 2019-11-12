@@ -47,7 +47,6 @@ class App extends Component {
               <Route path="/rooms" component={Rooms} />
               <Route path="/attractions" component={Attractions} />
               <Route path="/contact" component={Contact} />
-              <Route path="/events" component={Events} />
               <Route component={FourOhFour} />
             </Switch>
           </main>
