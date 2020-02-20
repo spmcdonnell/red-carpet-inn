@@ -25,6 +25,13 @@ const homeSliderData = [
     buttonLink: '/rooms'
   },
   {
+    image: sliderTwoImage,
+    heading: 'Experience Atlantic City Without The Atlantic City Price',
+    subtitle: 'View exciting local attractions!',
+    buttonText: 'Find Your Excitement!',
+    buttonLink: '/attractions'
+  },
+  {
     image: sliderThreeImage,
     heading: 'Experience Atlantic City Without The Atlantic City Price',
     subtitle: 'View exciting local attractions!',
@@ -32,14 +39,7 @@ const homeSliderData = [
     buttonLink: '/attractions'
   },
   {
-    image: sliderOneImage,
-    heading: 'Plan Your Vacation Today!',
-    subtitle: 'A variety of rooms to suit your needs.',
-    buttonText: 'Book Now',
-    buttonLink: '/rooms'
-  },
-  {
-    image: sliderOneImage,
+    image: sliderTwoImage,
     heading: 'Experience Atlantic City Without The Atlantic City Price',
     subtitle: 'View exciting local attractions!',
     buttonText: 'Find Your Excitement!',
