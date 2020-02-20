@@ -13,6 +13,7 @@ import Rooms from '../pages/Rooms';
 import Attractions from '../pages/Attractions';
 import Contact from '../pages/Contact';
 import Events from '../pages/Events';
+import FourOhFour from '../pages/FourOhFour';
 
 // Styles
 import normalize from './Global.scss';
@@ -20,9 +21,6 @@ import style from './App.css';
 
 // Favicon
 import favicon from 'images/favicon.ico';
-
-// 404
-const FourOhFour = () => <h1>404</h1>;
 
 class App extends Component {
   state = {
