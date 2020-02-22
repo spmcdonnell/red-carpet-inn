@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 // Assets
 import envelope from 'images/white-email-icon.png';
 import phone from 'images/white-phone-icon.png';
-
 import clearDay from 'images/clear-day.png';
 import cloudyDay from 'images/cloudy-day.png';
 import rainyDay from 'images/rainy-day.png';
 import stormyDay from 'images/stormy-day.png';
-
 import snowflake from 'images/snowflake.png';
 
 // Styles
@@ -21,28 +20,18 @@ class Preheader extends Component {
   };
 
   componentDidMount() {
-    function load_weather_data() {
-      const API_KEY = 'f2d6899155b9415e362735d3cbe36f7b';
-      const ROOT_URL = `http://api.openweathermap.org/data/2.5/weather?id=4500546&APPID=${API_KEY}`;
-      return fetch(ROOT_URL).then(resp => resp.json());
-    }
+    const API_KEY = 'f2d6899155b9415e362735d3cbe36f7b';
+    const ROOT_URL = `http://api.openweathermap.org/data/2.5/weather?id=4500546&APPID=${API_KEY}`;
 
-    let weatherData = load_weather_data();
-
-    console.log(weatherData);
-
-    Promise.all([weatherData]).then(values => {
-      let weatherObj = values[0];
-      let description = weatherObj.weather[0].description.toLowerCase();
+    axios.get(ROOT_URL).then(res => {
+      const weatherObj = res.data;
+      const description = weatherObj.weather[0].description.toLowerCase();
 
       let weatherIcon;
 
       if (description === 'clear sky') {
         weatherIcon = clearDay;
-      } else if (
-        description.indexOf('cloud') !== -1 ||
-        description === 'mist'
-      ) {
+      } else if (description.indexOf('cloud') !== -1 || description === 'mist') {
         weatherIcon = cloudyDay;
       } else if (description.indexOf('rain') !== -1) {
         weatherIcon = rainyDay;
@@ -56,6 +45,8 @@ class Preheader extends Component {
 
       this.setState({ weatherData: weatherObj });
       this.setState({ weatherIcon });
+    }).catch(err => {
+      console.log(`There was an error: ${err}`);
     });
   }
 
