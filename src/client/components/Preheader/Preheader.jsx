@@ -64,14 +64,14 @@ class Preheader extends Component {
     }
 
     return (
-      <div className={[style.preheader].join(' ')}>
+      <div className={style.preheader}>
         <div className="wrap">
           <div className="grid-x">
             <div className="cell small-12 medium-6">
               <p>COME SEE WHAT NJ HAS TO OFFER THIS HOLIDAY WEEKEND!</p>
             </div>
-            <div className={[style.cell, 'small-12', 'medium-6'].join(' ')}>
-              <ul className={[style.menu, 'menu'].join(' ')}>
+            <div className={`${style.cell} small-12 medium-6`}>
+              <ul className={`${style.menu} menu`}>
                 <li>
                   <img src={this.state.weatherIcon} height="18" /> {temp} °F
                 </li>

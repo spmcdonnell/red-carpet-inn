@@ -22,7 +22,7 @@ class Slide extends Component {
 
     return (
       <div
-        className={[style.slide, style[activeClass]].join(' ')}
+        className={`${style.slide} ${style[activeClass]}`}
         style={bgImageStyle}
       >
         <div className={style.content}>

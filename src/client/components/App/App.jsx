@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div
-          className={[style['app-wrap'], style[this.state.mounted]].join(' ')}
+          className={`${style['app-wrap']} ${style[this.state.mounted]}`}
           style={{ opacity: 0 }}
         >
           <Header />

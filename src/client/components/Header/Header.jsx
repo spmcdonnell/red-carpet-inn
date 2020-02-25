@@ -6,7 +6,7 @@ import style from './Header.css';
 class Header extends Component {
   render() {
     return (
-      <header className={style.site_header}>
+      <header className={style['site-header']}>
         <Preheader />
         <MainNav />
       </header>
