@@ -16,7 +16,7 @@ import slides from 'helpers/sliders/homeSlider';
 class Home extends Component {
   render() {
     return (
-      <div className={['main-content', style['main-content-home']].join(' ')}>
+      <div className={`main-content ${style['main-content-home']}`}>
         <section className="hero hero-home">
           <Slider slides={slides} />
         </section>
@@ -71,15 +71,15 @@ class Home extends Component {
             <h2>Tentative Callout Section</h2>
           </div>
         </section>
-        <section className={[style['contact-info'], 'no-padding'].join(' ')}>
-          <div className={[style['grid-x'], 'grid-x'].join(' ')}>
+        <section className={`${style['contact-info']} no-padding`}>
+          <div className={`${style['grid-x']} grid-x`}>
             <div
-              className={[style.cell, 'cell', 'small-12', 'medium-6'].join(' ')}
+              className={`${style.cell} cell small-12 medium-6`}
             >
               {/* <LocationMap /> */}
             </div>
             <div
-              className={[style.cell, 'cell', 'small-12', 'medium-6'].join(' ')}
+              className={`${style.cell} cell small-12 medium-6`}
             >
               <h2>Get In Touch!</h2>
               <h3>For Booking and Availability</h3>

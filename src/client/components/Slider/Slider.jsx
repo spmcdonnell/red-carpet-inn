@@ -61,17 +61,17 @@ class Slider extends Component {
     return (
       <div className={style.slider}>
         {slides.map((slide, index) => {
-          const active = index === this.state.activeSlideIndex ? true : false;
+          const active = index === this.state.activeSlideIndex;
           return <Slide key={index} slide={slide} active={active} />;
         })}
         <button
-          className={[style['slider-navigation'], style.prev].join(' ')}
+          className={`${style['slider-navigation']} ${style.prev}`}
           onClick={this.goToPrevSlide}
         >
           Previous Slide
         </button>
         <button
-          className={[style['slider-navigation'], style.next].join(' ')}
+          className={`${style['slider-navigation']} ${style.next}`}
           onClick={this.goToNextSlide}
         >
           Next Slide

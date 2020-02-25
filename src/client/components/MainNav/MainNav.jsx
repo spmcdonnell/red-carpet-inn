@@ -9,7 +9,7 @@ import style from './MainNav.css';
 class MainNav extends Component {
   render() {
     return (
-      <div className={[style['main-nav']].join(' ')}>
+      <div className={`${style['main-nav']}`}>
         <div className="wrap">
           <div className="grid-x grid-margin-x">
             <div className="logo-container cell small-12 medium-2">
@@ -24,7 +24,7 @@ class MainNav extends Component {
               </Link>
             </div>
             <nav className="primary-nav cell small-12 medium-10">
-              <ul className={[style.menu, 'menu'].join(' ')}>
+              <ul className={`${style.menu} menu`}>
                 <li>
                   <Link to="/">Home</Link>
                 </li>
