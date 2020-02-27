@@ -26,6 +26,7 @@ class App extends Component {
   state = {
     mounted: null
   };
+
   componentDidMount() {
     this.setState({ mounted: 'component-mounted' });
   }
@@ -44,6 +45,7 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/rooms" component={Rooms} />
               <Route path="/attractions" component={Attractions} />
+              <Route path="/events" component={Events} />
               <Route path="/contact" component={Contact} />
               <Route component={FourOhFour} />
             </Switch>

@@ -55,13 +55,7 @@ class Preheader extends Component {
   };
 
   render() {
-    let temp;
-
-    if (this.state.weatherData) {
-      temp = this.kelvinToFahrenheit(this.state.weatherData.main.temp);
-    } else {
-      temp = 'Loading temperature';
-    }
+    const temp = this.state.weatherData ? this.kelvinToFahrenheit(this.state.weatherData.main.temp) : 'Loading temperature';
 
     return (
       <div className={style.preheader}>

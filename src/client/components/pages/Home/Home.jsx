@@ -14,6 +14,14 @@ import style from './Home.css';
 import slides from 'helpers/sliders/homeSlider';
 
 class Home extends Component {
+  componentDidMount() {
+    document.body.classList.add('home');
+  }
+
+  componentWillUnmount() {
+    document.body.classList.remove('home');
+  }
+
   render() {
     return (
       <div className={`main-content ${style['main-content-home']}`}>
