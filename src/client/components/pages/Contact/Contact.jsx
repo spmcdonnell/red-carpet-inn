@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 
 class Contact extends Component {
+  componentDidMount() {
+    document.body.classList.add('contact');
+  }
+
+  componentWillUnmount() {
+    document.body.classList.remove('contact');
+  }
+
   render() {
     return (
       <div>
