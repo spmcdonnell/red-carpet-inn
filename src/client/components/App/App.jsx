@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // Common components
-import Preheader from '../Preheader';
 import Header from '../Header';
 import Footer from '../Footer';
 
@@ -12,11 +11,10 @@ import About from '../pages/About';
 import Rooms from '../pages/Rooms';
 import Attractions from '../pages/Attractions';
 import Contact from '../pages/Contact';
-import Events from '../pages/Events';
 import FourOhFour from '../pages/FourOhFour';
 
 // Styles
-import normalize from './Global.scss';
+import './Global.scss';
 import style from './App.css';
 
 // Favicon
@@ -45,7 +43,6 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/rooms" component={Rooms} />
               <Route path="/attractions" component={Attractions} />
-              <Route path="/events" component={Events} />
               <Route path="/contact" component={Contact} />
               <Route component={FourOhFour} />
             </Switch>
