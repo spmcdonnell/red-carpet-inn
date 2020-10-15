@@ -6,5 +6,5 @@ webServer
     console.log('Web server started!');
   })
   .catch(err => {
-    console.error(err);
+    console.error(`There was an error: ${err}`);
   });

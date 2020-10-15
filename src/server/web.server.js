@@ -29,7 +29,7 @@ export default class WebServer {
           resolve();
         });
       } catch (e) {
-        console.error(e.message);
+        console.error(`There was an error: ${e.message}`);
         reject(e);
       }
     });
