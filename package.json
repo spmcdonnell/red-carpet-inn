@@ -58,7 +58,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "eslint": "^5.13.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "formik": "^2.0.3",
     "google-map-react": "^1.1.2",
     "raf": "^3.4.1",
